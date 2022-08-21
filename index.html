@@ -83,8 +83,9 @@
               your culinary senses!
             </p>
           </div>
-          <div class="col-12 col-sm align-self-center">
-            <img src="img/logo.png" class="img-fluid" />
+          <div class="col-12 col-sm-6 align-self-center">
+            <img  src="img/logo.png" class="img-fluid" /> 
+            <a   class="col-8" href="#reserve"> <button class="btn-fluid btn btn-warning btn-lg">Reserve Table</button> </a>
           </div>
         </div>
       </div>
@@ -96,11 +97,14 @@
           <h3>Our Lipsmacking Culinary Creations</h3>
         </div>
         <div class="col col-sm order-sm-first col-md">
+          <div class="alert alert-danger" role="alert">
+            This is a most Ordered Food out there!
+          </div>
           <div class="media">
             <img class="d-flex mr-3 img-thumbnail align-self-center"
                     src="img/uthappizza.png" alt="Uthappizza">
             <div class="media-body">
-                <h2 class="mt-0">Uthappizza</h2>
+                <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
                 <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and
                     Italian pizza, topped with Cerignola olives, ripe vine
                     cherry tomatoes, Vidalia onion, Guntur chillies and
@@ -116,13 +120,18 @@
           <h3>This Month's Promotions</h3>
         </div>
         <div class="col col-sm col-md">
-          <h2>Weekend Grand Buffet</h2>
-          <p class="d-none d-lg-block">
-            Featuring mouthwatering combinations with a choice of five different
-            salads, six enticing appetizers, six main entrees and five choicest
-            desserts. Free flowing bubbly and soft drinks. All for just $19.99
-            per person
-          </p>
+          <div class="media">
+            <div class="media-body">
+              <h2 class="mt-0 mb-1">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+              <p class="d-none d-lg-block">
+                Featuring mouthwatering combinations with a choice of five different
+                salads, six enticing appetizers, six main entrees and five choicest
+                desserts. Free flowing bubbly and soft drinks. All for just $19.99
+                per person
+              </p>
+            </div>
+            <img class="ml-3" src="./img/buffet.png" alt="Generic placeholder image">
+          </div>
         </div>
       </div>
 
@@ -146,8 +155,52 @@
          </div>
         </div>
       </div>
+      <div class="row  justify-content-md-center" >
+
+      <div  id="reserve" class="col-sm-12 col-lg-6 col-md-8">
+        <div class="card">
+          <h5 class="card-header bg-warning text-white">Featured</h5>
+          <div class="card-body">
+            <!-- <h5 class="card-title">Special title treatment</h5> -->
+            <dl class="row">
+              <dd class="col-3">Number of Guests</dd>
+              <dd class="col-9"><input type="radio" id="html" name="fav_language" value="HTML">
+                  <label for="html">1</label>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                  <label for="html">2</label>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                  <label for="html">3</label>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                  <label for="html">4</label>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                  <label for="html">5</label>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                  <label for="html">6</label>
+
+
+                <dd class="col-3">Date and Time</dd>
+                <dd class="col-9">
+                  <input class="col-4"  type="text" placeholder="Date" id="">
+                  <input class="col-4" type="text" placeholder="Time" name="" id="">
+                </dd>
+              </dd>
+            </dl>
+          
+            <a href="#" class="btn btn-primary offset-3">Reserve</a>
+          </div>
+        </div>
+      </div>
+
+      </div>
+      
     </div>
+    
   </div>
+
+
+
+
+
     <footer class="footer">
       <div class="container">
         <div class="row">
