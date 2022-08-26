@@ -75,50 +75,74 @@
           </ul>
         
            <!----------------------------------------------------LOGIN Modal ----------------------------------------------------------------------------> 
-
-            <span class="navbar-text">
-              <a  type="button" data-toggle="modal" data-target="#loginModal" data-bs-toggle="modal"
-              data-bs-target="#loginModal" >
-              <span class="fa fa-sign-in"></span> Login</a>
-            </span>
-          
-          <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="dialog">
-              <div class="modal-content" role="content">
+           <span class="navbar-text" id="myBtn">
+            <a
+              type="button"
+              data-toggle="modal"
+              data-target="#loginModal"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              <span class="fa fa-sign-in"></span> Login</a
+            >
+          </span>
+                    <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
                 <div class="modal-header">
-                  <h4 class="modal-title" id="exampleModalLabel">Login</h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-
+                  <h2>Login</h2>
+                  <span class="close">&times;</span>
                 </div>
+
                 <div class="modal-body">
                   <form>
-                  <div class="form-row">
-                    <div class="form-group col-sm-4">
-                            <label class="sr-only text-dark" for="exampleInputEmail3">Email address</label>
-                            <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
-                    </div>
-                    <div class="form-group col-sm-4">
-                        <label class="sr-only text-dark" for="exampleInputPassword3">Password</label>
-                        <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
-                    </div>
-                    <div class="col-sm-auto">
+                    <div class="form-row">
+                      <div class="form-group col-sm-4">
+                        <label class="sr-only text-dark" for="exampleInputEmail3"
+                          >Email address</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control form-control-sm mr-1"
+                          id="exampleInputEmail3"
+                          placeholder="Enter email"
+                        />
+                      </div>
+                      <div class="form-group col-sm-4">
+                        <label class="sr-only text-dark" for="exampleInputPassword3"
+                          >Password</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control form-control-sm mr-1"
+                          id="exampleInputPassword3"
+                          placeholder="Password"
+                        />
+                      </div>
+                      <div class="col-sm-auto">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox">
-                            <label class="form-check-label text-dark"> Remember me
-                            </label>
+                          <input class="form-check-input" type="checkbox" />
+                          <label class="form-check-label text-dark">
+                            Remember me
+                          </label>
                         </div>
+                      </div>
                     </div>
-                  </div>
-                </form> 
-              </div>
+                  </form>
+                </div>
 
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal"  data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" id="exit" class="btn btn-secondary">
+                    Cancel
+                  </button>
+                  <button type="button" class="btn btn-primary">Sign in</button>
                 </div>
               </div>
             </div>
           </div>
+
+              
     </nav>
 
     <!--------------------------------------------------- TOP CONTENT ----------------------------------------------------------------------------------->
@@ -147,7 +171,7 @@
               Reserve Table
             </button>
 
-            <!----------------------------------------------------------------- Modal ---------------------------------------------------------------------->
+            <!-------------------------------------------------RESERVE TABLE Modal --------------------------------------------------->
             <div class="modal fade" id="newModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-lg" role="dialog" >
                 <div class="modal-content"  role="content">
@@ -447,6 +471,7 @@
       </div>
     </footer>
     <!------------------------------------------------------ jQuery first, then Popper.js, then Bootstrap JS. ---------------------------------------------->
+    <script src="index.js"></script>   
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
